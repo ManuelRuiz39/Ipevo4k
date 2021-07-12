@@ -48,15 +48,21 @@ namespace FFBM
             this.gammaBar = new System.Windows.Forms.TrackBar();
             this.saturation = new System.Windows.Forms.Label();
             this.saturationBar = new System.Windows.Forms.TrackBar();
+            this.mfocusBar = new System.Windows.Forms.TrackBar();
+            this.mfocus = new System.Windows.Forms.Label();
+            this.FocusChanged = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.brBar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.contrastBar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gammaBar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.saturationBar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mfocusBar)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(919, 43);
             this.label1.Name = "label1";
@@ -66,6 +72,9 @@ namespace FFBM
             // 
             // pic
             // 
+            this.pic.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pic.Location = new System.Drawing.Point(24, 40);
             this.pic.Name = "pic";
             this.pic.Size = new System.Drawing.Size(873, 530);
@@ -75,6 +84,7 @@ namespace FFBM
             // 
             // btnStart
             // 
+            this.btnStart.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnStart.Location = new System.Drawing.Point(922, 547);
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(121, 23);
@@ -85,6 +95,8 @@ namespace FFBM
             // 
             // comboBox1
             // 
+            this.comboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(922, 59);
             this.comboBox1.Name = "comboBox1";
@@ -94,6 +106,8 @@ namespace FFBM
             // 
             // comboBox2
             // 
+            this.comboBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Location = new System.Drawing.Point(922, 116);
             this.comboBox2.Name = "comboBox2";
@@ -103,6 +117,8 @@ namespace FFBM
             // 
             // label2
             // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(922, 97);
             this.label2.Name = "label2";
@@ -112,6 +128,7 @@ namespace FFBM
             // 
             // preview
             // 
+            this.preview.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.preview.Location = new System.Drawing.Point(1065, 547);
             this.preview.Name = "preview";
             this.preview.Size = new System.Drawing.Size(121, 23);
@@ -122,6 +139,7 @@ namespace FFBM
             // 
             // button2
             // 
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button2.Location = new System.Drawing.Point(922, 426);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(264, 23);
@@ -132,6 +150,7 @@ namespace FFBM
             // 
             // button1
             // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button1.Location = new System.Drawing.Point(922, 464);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(264, 23);
@@ -142,6 +161,7 @@ namespace FFBM
             // 
             // DeviceMessageTextBlock
             // 
+            this.DeviceMessageTextBlock.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.DeviceMessageTextBlock.AutoSize = true;
             this.DeviceMessageTextBlock.Location = new System.Drawing.Point(848, 575);
             this.DeviceMessageTextBlock.Name = "DeviceMessageTextBlock";
@@ -151,6 +171,7 @@ namespace FFBM
             // 
             // stop
             // 
+            this.stop.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.stop.Location = new System.Drawing.Point(922, 504);
             this.stop.Name = "stop";
             this.stop.Size = new System.Drawing.Size(264, 23);
@@ -161,13 +182,18 @@ namespace FFBM
             // 
             // brBar
             // 
+            this.brBar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.brBar.Location = new System.Drawing.Point(922, 167);
             this.brBar.Name = "brBar";
             this.brBar.Size = new System.Drawing.Size(264, 45);
             this.brBar.TabIndex = 12;
+            this.brBar.Scroll += new System.EventHandler(this.brBar_Scroll);
             // 
             // br
             // 
+            this.br.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.br.AutoSize = true;
             this.br.Location = new System.Drawing.Point(922, 151);
             this.br.Name = "br";
@@ -177,6 +203,8 @@ namespace FFBM
             // 
             // contrast
             // 
+            this.contrast.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.contrast.AutoSize = true;
             this.contrast.Location = new System.Drawing.Point(922, 199);
             this.contrast.Name = "contrast";
@@ -186,6 +214,7 @@ namespace FFBM
             // 
             // contrastBar
             // 
+            this.contrastBar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.contrastBar.Location = new System.Drawing.Point(922, 215);
             this.contrastBar.Name = "contrastBar";
             this.contrastBar.Size = new System.Drawing.Size(264, 45);
@@ -193,6 +222,8 @@ namespace FFBM
             // 
             // gamma
             // 
+            this.gamma.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.gamma.AutoSize = true;
             this.gamma.Location = new System.Drawing.Point(922, 247);
             this.gamma.Name = "gamma";
@@ -202,6 +233,8 @@ namespace FFBM
             // 
             // gammaBar
             // 
+            this.gammaBar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.gammaBar.Location = new System.Drawing.Point(922, 266);
             this.gammaBar.Name = "gammaBar";
             this.gammaBar.Size = new System.Drawing.Size(264, 45);
@@ -209,6 +242,8 @@ namespace FFBM
             // 
             // saturation
             // 
+            this.saturation.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.saturation.AutoSize = true;
             this.saturation.Location = new System.Drawing.Point(922, 298);
             this.saturation.Name = "saturation";
@@ -218,16 +253,52 @@ namespace FFBM
             // 
             // saturationBar
             // 
+            this.saturationBar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.saturationBar.Location = new System.Drawing.Point(922, 317);
             this.saturationBar.Name = "saturationBar";
             this.saturationBar.Size = new System.Drawing.Size(264, 45);
             this.saturationBar.TabIndex = 19;
+            // 
+            // mfocusBar
+            // 
+            this.mfocusBar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.mfocusBar.Location = new System.Drawing.Point(925, 368);
+            this.mfocusBar.Name = "mfocusBar";
+            this.mfocusBar.Size = new System.Drawing.Size(261, 45);
+            this.mfocusBar.TabIndex = 20;
+            this.mfocusBar.Scroll += new System.EventHandler(this.mfocusBar_Scroll);
+            // 
+            // mfocus
+            // 
+            this.mfocus.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.mfocus.AutoSize = true;
+            this.mfocus.Location = new System.Drawing.Point(925, 348);
+            this.mfocus.Name = "mfocus";
+            this.mfocus.Size = new System.Drawing.Size(74, 13);
+            this.mfocus.TabIndex = 21;
+            this.mfocus.Text = "Manual Focus";
+            // 
+            // FocusChanged
+            // 
+            this.FocusChanged.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.FocusChanged.AutoSize = true;
+            this.FocusChanged.Location = new System.Drawing.Point(679, 577);
+            this.FocusChanged.Name = "FocusChanged";
+            this.FocusChanged.Size = new System.Drawing.Size(33, 13);
+            this.FocusChanged.TabIndex = 22;
+            this.FocusChanged.Text = "focus";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1219, 597);
+            this.Controls.Add(this.FocusChanged);
+            this.Controls.Add(this.mfocus);
+            this.Controls.Add(this.mfocusBar);
             this.Controls.Add(this.saturationBar);
             this.Controls.Add(this.saturation);
             this.Controls.Add(this.gammaBar);
@@ -248,13 +319,14 @@ namespace FFBM
             this.Controls.Add(this.pic);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "GDLI40-FFBM";
             this.Load += new System.EventHandler(this.Form1_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.pic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.brBar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.contrastBar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gammaBar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.saturationBar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mfocusBar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -281,6 +353,9 @@ namespace FFBM
         private System.Windows.Forms.TrackBar gammaBar;
         private System.Windows.Forms.Label saturation;
         private System.Windows.Forms.TrackBar saturationBar;
+        private System.Windows.Forms.TrackBar mfocusBar;
+        private System.Windows.Forms.Label mfocus;
+        private System.Windows.Forms.Label FocusChanged;
     }
 }
 

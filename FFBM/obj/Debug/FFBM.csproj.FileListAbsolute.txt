@@ -28,3 +28,4 @@ C:\Users\JuanRuizPlascencia\Documents\Industry4.0\FFBM-C#\FFBM\FFBM\obj\Debug\FF
 C:\Users\JuanRuizPlascencia\Documents\Industry4.0\FFBM-C#\FFBM\FFBM\obj\Debug\FFBM.exe
 C:\Users\JuanRuizPlascencia\Documents\Industry4.0\FFBM-C#\FFBM\FFBM\obj\Debug\FFBM.pdb
 C:\Users\JuanRuizPlascencia\Documents\Industry4.0\FFBM-C#\FFBM\FFBM\bin\Debug\System.Threading.Tasks.Dataflow.dll
+C:\Users\JuanRuizPlascencia\Documents\Industry4.0\FFBM-C#\FFBM\FFBM\obj\Debug\FFBM.Form2.resources
